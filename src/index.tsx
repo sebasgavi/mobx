@@ -2,23 +2,16 @@ import * as React from 'react';
 import { render } from 'react-dom';
 
 class Test extends React.Component<{},{}>{
-  constructor(props){
-    super(props);
-  }
-
   render(){
     return <div>
-      Hola
+      React is working!
     </div>
   }
 }
 
 
 render(
-  <div>
-    Danulo
-    <Test />
-  </div>,
+  <Test />,
   document.getElementById('root')
 );
 
