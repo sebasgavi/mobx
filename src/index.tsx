@@ -1,17 +1,10 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 
-class Test extends React.Component<{},{}>{
-  render(){
-    return <div>
-      React is working!
-    </div>
-  }
-}
-
+import { Root } from './root';
 
 render(
-  <Test />,
+  <Root />,
   document.getElementById('root')
 );
 
