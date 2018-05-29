@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 
+<<<<<<< HEAD
 class Test extends React.Component<{},{}>{
   render(){
     return <div>
@@ -8,9 +9,11 @@ class Test extends React.Component<{},{}>{
     </div>
   }
 }
+=======
+import { Root } from './root';
+>>>>>>> fb933db6c0786ee4967cf279b05d02bd0e1e2f03
 
 render(
-  <Test />,
+  <Root />,
   document.getElementById('root')
 );
-

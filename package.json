@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "./node_modules/.bin/webpack",
-    "server": "./node_modules/.bin/webpack-serve --open",
+    "prod": "./node_modules/.bin/webpack",
+    "dev": "./node_modules/.bin/webpack-serve --open",
     "start": "npm run server"
   },
   "author": "",
