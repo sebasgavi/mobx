@@ -2,14 +2,14 @@
     "compilerOptions": {
       "module": "commonjs",
       "sourceMap": true,
-      "noImplicitAny": false,
+      "noImplicitAny": true,
       "target": "es5",
+      "lib": ["es6", "dom"],
       "jsx": "react",
       "experimentalDecorators": true,
       "removeComments": true
     },
     "include": [
-      "typings/index.d.ts",
       "src/**/*.tsx",
       "src/**/*.ts"
     ],

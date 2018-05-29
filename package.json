@@ -4,21 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
-    "server": "webpack-dev-server",
+    "webpack": "./node_modules/.bin/webpack",
+    "server": "./node_modules/.bin/webpack-serve --open",
     "start": "npm run server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^3.2.3",
-    "typescript": "^2.3.2",
-    "typings": "^2.1.1",
-    "webpack": "^2.5.0",
-    "webpack-dev-server": "^2.4.5"
+    "awesome-typescript-loader": "^5.0.0",
+    "json-loader": "^0.5.7",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.8.3",
+    "webpack": "^4.10.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-serve": "^1.0.2"
   }
 }

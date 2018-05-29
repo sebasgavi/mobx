@@ -9,7 +9,6 @@ class Test extends React.Component<{},{}>{
   }
 }
 
-
 render(
   <Test />,
   document.getElementById('root')

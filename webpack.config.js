@@ -1,10 +1,9 @@
-var path = require('path');
-
 module.exports = {
+  mode: process.env.WEBPACK_SERVE ? 'development' : 'production',
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: __dirname + '/dist',
   },
 
   resolve: {
@@ -13,23 +12,22 @@ module.exports = {
 
   devtool: 'source-map',
 
-  devServer: {
-    historyApiFallback: true,
-    publicPath: '/dist/'
+  module: {
+    rules: [
+      { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
+      { test: /\.json$/, loader: 'json-loader' },
+      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' }
+    ]
   },
 
-  module: {
-    loaders: [
-      {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        loader: 'awesome-typescript-loader'
-      },
-      {
-        test: /\.json$/,
-        exclude: /node_modules/,
-        loader: 'json-loader'
-      },
-    ]
-  }
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
 };
+
+module.exports.serve = {
+  dev: {
+    publicPath: '/dist/'
+  }
+}
