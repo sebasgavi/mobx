@@ -6,7 +6,7 @@
   "scripts": {
     "prod": "./node_modules/.bin/webpack",
     "dev": "./node_modules/.bin/webpack-serve",
-    "start": "npm run server"
+    "start": "npm run dev"
   },
   "serve": {
     "open": true,
