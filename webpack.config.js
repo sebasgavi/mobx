@@ -25,9 +25,3 @@ module.exports = {
     'react-dom': 'ReactDOM'
   },
 };
-
-module.exports.serve = {
-  dev: {
-    publicPath: '/dist/'
-  }
-}

@@ -5,8 +5,14 @@
   "main": "index.js",
   "scripts": {
     "prod": "./node_modules/.bin/webpack",
-    "dev": "./node_modules/.bin/webpack-serve --open",
+    "dev": "./node_modules/.bin/webpack-serve",
     "start": "npm run server"
+  },
+  "serve": {
+    "open": true,
+    "dev": {
+      "publicPath": "/dist/"
+    }
   },
   "author": "",
   "license": "ISC",
