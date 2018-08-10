@@ -14,9 +14,27 @@ module.exports = {
 
   module: {
     rules: [
-      { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
-      { test: /\.json$/, loader: 'json-loader' },
-      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' }
+      { 
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader'
+      },
+      { 
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      { 
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader"
+        ]
+      }
     ]
   },
 
