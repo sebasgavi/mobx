@@ -4,14 +4,14 @@ import './Header.scss';
 
 interface HeaderProps {
     title: string;
-    subtitle?: string;
+    text?: string;
     img?: string;
 }
 
-export const Header = ({ title, subtitle, img }: HeaderProps) => {
+export const Header = ({ title, text, img }: HeaderProps) => {
     return <header className="header">
         <img src={img} />
         <h1>{title}</h1>
-        {subtitle && <h2>{subtitle}</h2>}
+        {text && <p>{text}</p>}
     </header>;
 }

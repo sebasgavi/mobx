@@ -1,3 +1,5 @@
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
+
 module.exports = {
   mode: process.env.WEBPACK_SERVE ? 'development' : 'production',
   entry: './src/index.tsx',
@@ -16,7 +18,8 @@ module.exports = {
     rules: [
       { 
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader'
+        loader: 'ts-loader'
+        //loader: 'awesome-typescript-loader'
       },
       { 
         test: /\.json$/,
@@ -37,9 +40,11 @@ module.exports = {
       }
     ]
   },
-
+/*
   externals: {
     'react': 'React',
     'react-dom': 'ReactDOM'
-  },
+  },*/
+
+  plugins: [new ErrorOverlayPlugin()]
 };
