@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/dist',
+    path: __dirname + '/public/assets/dist',
   },
 
   resolve: {
@@ -19,7 +19,6 @@ module.exports = {
       { 
         test: /\.tsx?$/,
         loader: 'ts-loader'
-        //loader: 'awesome-typescript-loader'
       },
       { 
         test: /\.json$/,
@@ -40,11 +39,11 @@ module.exports = {
       }
     ]
   },
-/*
+
   externals: {
     'react': 'React',
     'react-dom': 'ReactDOM'
-  },*/
+  },
 
   plugins: [new ErrorOverlayPlugin()]
 };

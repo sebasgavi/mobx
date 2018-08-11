@@ -13,7 +13,7 @@
   "serve": {
     "open": true,
     "dev": {
-      "publicPath": "/dist/"
+      "publicPath": "/assets/dist/"
     }
   },
   "author": "",
@@ -28,7 +28,6 @@
     "ts-loader": "^4.4.2"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "^5.0.0",
     "css-loader": "^1.0.0",
     "error-overlay-webpack-plugin": "^0.1.5",
     "json-loader": "^0.5.7",

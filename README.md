@@ -1,11 +1,11 @@
 ## Instalación:
 * Click derecho -> Git Bash Here
-* git clone https://vagyriag@bitbucket.org/vagyriag/react_seed.git
-* cd react_seed
+* git clone https://github.com/vagyriag/react-seed.git
+* cd react-seed
 * npm install
 
 ## Uso:
-* npm run dev
+* npm start
 
 ## Exportar:
 * npm run prod
